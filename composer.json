@@ -1,0 +1,36 @@
+{
+    "name": "shuguang/upload",
+    "description": "The Upload Library For BAGECMS",
+    "keywords": [
+        "upload",
+        "yii2 upload",
+        "php",
+    ],
+    "type": "library",
+    "homepage": "https://github.com/shuguang/shuguang-upload",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "shuguang",
+            "email": "adm@testd.net",
+            "homepage": "http://testd.net",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=5.3.0",
+        "shuguang-image": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "shuguang\\": "src"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "master-dev"
+        }
+    }
+}
