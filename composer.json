@@ -17,8 +17,6 @@
             "role": "Developer"
         }
     ],
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "require": {
         "php": ">=5.3.0",
         "shuguang-image": "1.0"
