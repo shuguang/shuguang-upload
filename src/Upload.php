@@ -8,7 +8,7 @@
 namespace shuguang;
 
 use shuguang\lib\Local;
-use shuguang\base\Config;
+use shuguang\lib\Raw;
 
 class Upload
 {
@@ -42,6 +42,26 @@ class Upload
                 }
             }
             return self::$file;
+        } catch (\Exception $e) {
+            echo $e->getMessage();
+        }
+    }
+
+    /**
+     * 原始内容上传
+     * @param  string $data 原始内容
+     * @param  array  $args 参数
+     * @param  string $suffix 扩展名
+     * @return
+     */
+    public static function raw($data, $name = '', $args = [])
+    {
+        try {
+            $file = new Raw();
+            $move = $file->move($data, $name,$args);
+            if (false == $move) {
+                throw new \Exception($file->getError());
+            }
         } catch (\Exception $e) {
             echo $e->getMessage();
         }

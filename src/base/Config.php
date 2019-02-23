@@ -1,4 +1,10 @@
 <?php
+/**
+ * 配置
+ * @author        shuguang <5565907@qq.com>
+ * @link          http://www.bagesoft.cn
+ */
+
 namespace shuguang\base;
 
 use bagesoft\models\Config as MConfig;
